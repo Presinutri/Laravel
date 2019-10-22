@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// });
+
+Route::get('/buat','buatController@index');
+Route::get('/login','LoginController@login');
+Route::get('/register','LoginController@register');
+
+Route::get('/home','HomeController@home');
+Route::get('/pertama','HomeController@pertama');
+Route::get('/kedua','HomeController@kedua');
+Route::get('/ketiga','HomeController@ketiga');
